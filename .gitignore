@@ -1,7 +1,34 @@
-# composer
+# Composer dependencies
 /vendor/
-App/vendor/
-composer.phar
+composer.lock
 
-# ide
-.vscode
+# Environment variables
+.env
+.env.local
+config/config.php # Often contains local/sensitive config
+config/db.php     # Example sensitive database config
+*.sql             # Ignore database dumps
+*.sqlite
+
+# IDE and OS specific files
+.idea/          # PHPStorm/WebStorm
+.vscode/        # VS Code
+.DS_Store       # macOS
+Thumbs.db       # Windows
+*.swp           # Vim swap files
+
+# Log files and temporary data
+/logs/
+/temp/
+/cache/
+*.log
+*.tmp
+
+# Common build/runtime artifacts
+/web/assets/compiled/ # Example: compiled assets (if not committed)
+
+# If you use Node.js for assets
+/node_modules/
+
+# Exclude specific files that might be generated locally but not shared
+# !important.log # Use '!' to un-ignore something otherwise ignored
